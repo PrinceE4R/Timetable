@@ -17,9 +17,15 @@
             --br: 80px;
             --div-br:1px;
             --fw: 600;
+            --cw: calc(100% - 100px);
         }
         html {
-            background-color: var(--major);
+            background-image: url("contents/dodrgb.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -30,16 +36,16 @@
             left: 50%;
             border-radius: var(--br);
             transform: translateX(-50%);
-            width: calc(100% - 100px);
+            width: var(--cw);
             height: 30%;
             background-color: var(--minor);
         }
         .date {
             position: absolute;
-            bottom: 15%;
+            bottom: 12%;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 40px;
+            font-size: 50px;
             font-family: "Kodchasan", sans-serif;
             font-weight: var(--fw);
             color: var(--major);
@@ -49,7 +55,7 @@
             top: 58%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: calc(100% - 100px);
+            width: var(--cw);
             height: calc(100% - 175px);
         }
         .pseudo-bar {
@@ -142,11 +148,11 @@
                 font-size: 9.6vw;
             }
             .from {
-                font-size: 3.4vw;
+                font-size: 3.8vw;
             }
             .activity {
                 text-align: right;
-                font-size: 3.4vw;
+                font-size: 3.8vw;
             }
             .cell {
                 padding: 10px;
@@ -155,12 +161,17 @@
             }
             :root {
                 --dis: -2%;
+                --br: 40px;
+                --cw: calc(100% - 55px);
             }
             .textbox {
                 height: 80%;
             }
             .dates-conatiner {
                 top: -18%;
+            }
+            .pseudo-bar {
+                display: none;
             }
         }
     </style>

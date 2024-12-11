@@ -17,9 +17,15 @@
             --br: 80px;
             --div-br:1px;
             --fw: 600;
+            --cw: calc(100% - 100px);
         }
         html {
-            background-color: var(--major);
+            background-image: url("contents/dodrgb.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -30,7 +36,7 @@
             left: 50%;
             border-radius: var(--br);
             transform: translateX(-50%);
-            width: calc(100% - 100px);
+            width: var(--cw);
             height: 30%;
             background-color: var(--minor);
         }
@@ -49,7 +55,7 @@
             top: 58%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: calc(100% - 100px);
+            width: var(--cw);
             height: calc(100% - 175px);
         }
         .pseudo-bar {
@@ -142,10 +148,10 @@
                 font-size: 9.6vw;
             }
             .from {
-                font-size: 3.4vw;
+                font-size: 3.8vw;
             }
             .activity {
-                font-size: 3.4vw;
+                font-size: 3.8vw;
             }
             .cell {
                 padding: 10px;
@@ -154,12 +160,17 @@
             }
             :root {
                 --dis: -2%;
+                --br: 40px;
+                --cw: calc(100% - 55px);
             }
             .textbox {
                 height: 80%;
             }
             .dates-conatiner {
                 top: -18%;
+            }
+            .pseudo-bar {
+                display: none;
             }
         }
     </style>
@@ -178,7 +189,7 @@
                 </div>
                 <div class="cell">
                     <span class="from"></span>
-                    <span class="activity">Class 11 topics in Physics and Maths</span>
+                    <span class="activity">Class 11 Physics 🧲 and Maths 📐</span>
                 </div>
                 <div class="cell">
                     <span class="from">4:00 to 7:30</span>
@@ -186,7 +197,7 @@
                 </div>
                 <div class="cell">
                     <span class="from"></span>
-                    <span class="activity">Class 11 Chemistry and Biology</span>
+                    <span class="activity">Class 11 Chemistry 🧪 and Biology 🧬</span>
                 </div>
                 <div class="cell">
                     <span class="from">7:30 to 8:20</span>
@@ -194,7 +205,7 @@
                 </div>
                 <div class="cell">
                     <span class="from"></span>
-                    <span class="activity">Nothing</span>
+                    <span class="activity">Nothing 🔲</span>
                 </div>
                 <div class="cell">
                     <span class="from"></span>
@@ -206,7 +217,7 @@
                 </div>
                 <div class="cell">
                     <span class="from"></span>
-                    <span class="activity">Miscellaneous (pending backlog or extra revision)</span>
+                    <span class="activity">Miscellaneous 📚(pending backlog or extra revision)</span>
                 </div>
                 <div class="cell">
                     <span class="from"></span>
